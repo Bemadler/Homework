@@ -1,0 +1,67 @@
+h2 
+{
+    color: blue;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    /*здесь задается шрифт*/
+    Front-size: 16pt;
+    /*а здесь размер шрифта*/
+    color:#000033;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    Front-size: 14pt;
+    color:#333333;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    Front-size: 12pt;
+    color:#990000;
+}
+
+img {
+    width: calc(100%-100px);
+    border-radius: 25px;
+}
+.menu {
+    text-decoration: none;
+    color:black;
+    padding: 4px;
+    font-weight: bolder;
+}
+
+#wiki{
+    color: red;
+}
+
+nav .menu 
+{
+    color:violet;
+}
+nav .menu:hover 
+{
+    text-decoration: underline;
+}
+
+p::first-letter {
+    color: red;
+}
+
+#logo {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    border: 1px, solid black;
+    opacity: 0.5;
+    box-shadow:0 0 10px black;
+}
+
+#companyname {
+    margin: 20px;
+    font-style: italic; 
+    font-family: 'Noto Serif Display', 
+    font-family: 'Playfair';
+}

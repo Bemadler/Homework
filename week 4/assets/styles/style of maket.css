@@ -1,0 +1,15 @@
+.menu {
+    text-decoration: none;
+    color:rgb(1, 1, 79);
+    padding: 4px;
+    font-weight: bolder;
+}
+.box {
+    font-family: 'Roboto', sans-serif;
+    }
+h5 {
+    color:rgb(182, 182, 234);
+}
+p::first-letter {
+    color: rgb(88, 207, 9);
+}
