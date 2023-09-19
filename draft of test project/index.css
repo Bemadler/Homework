@@ -1,0 +1,768 @@
+/* Начало подключения шрифтов */
+@font-face {
+    font-family: "Crimson Pro";
+    src: url(../fonts/CrimsonPro-Bold.ttf) format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Crimson Pro";
+    src: url(../fonts/CrimsonPro-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Crimson Pro";
+    src: url(../fonts/CrimsonPro-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-Light.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/OpenSans-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+/* Конец подключения шрифтов */
+
+.link {
+    text-decoration: none;
+}
+/*Начало секции хэдер с лого*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+#logo {
+    object-fit: contain;
+    width: 416px;
+    height: 64px;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid black;
+}
+
+/*конец секции лого*/
+/*размер шрифтов в блоках - начало*/
+.title {
+    font-size: 6vh;
+    font-family: "Crimson Pro";
+    font-weight: 700;
+    color: #e67136;
+    margin-bottom: 0;
+}
+.block__subtitle {
+    font-size: 3vh;
+    font-family: "Crimson Pro";
+    font-weight: 500;
+    font-style: normal;
+}
+.block__description {
+    font-size: 2vh;
+    font-family: "Open Sans";
+    font-weight: 300;
+    padding-bottom: 74px;
+}
+/*размер шрифтов в блоках - конец*/
+/* общие стили для кнопок - начало */
+.button {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+    padding-right: 72px;
+    padding-left: 72px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    background: #e67136;
+    box-shadow: -30px 20px 30px 0px rgba(0, 0, 0, 0.3);
+
+    text-decoration: none;
+}
+
+.button:active {
+    transform: translate(-2px, 2px);
+    box-shadow: -20px 15px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.button__text {
+    color: #fff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/* общие стили для кнопок - конец */
+
+/* headline секция - начало */
+.headline-section {
+    margin-top: 34px;
+
+    background-image: url(../images/background.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.headline-section__layer {
+    width: 100%;
+    padding-bottom: 18%;
+    padding-top: 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #244439cc;
+}
+
+.headline-section__title {
+    margin-top: 0;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-bottom: 64px;
+
+    color: #fff;
+    text-align: center;
+    font-family: "Crimson Pro";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px; /* 125% */
+}
+
+.headline-section__title_highlighted {
+    color: #e67136;
+    font-weight: 700;
+}
+/* headline секция - конец */
+
+/* стили для секции 3 блока с картинками начало */
+.block {
+    background-color: #f5f4f4;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.block__text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    max-width: 50vw;
+    padding-top: 100px;
+}
+.block__img {
+    border-radius: 250px;
+    object-fit: cover;
+    width: 25vw;
+    height: 35vw;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.block__img:hover {
+    border: #867575 solid 1px;
+    transform: scale(1.2);
+}
+
+.block__button {
+    margin-top: auto;
+}
+/* стили для секции 3 блока с картинками конец */
+
+/* Секция Services начало */
+.services-section {
+    max-width: 1440px; /*  Ограничивающий контейнер*/
+    margin: 0 auto;
+    text-align: center;
+}
+.services-section__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 24px;
+    padding-top: 95px;
+    padding-bottom: 165px;
+}
+
+.services-section__text {
+    padding: 0 20px;
+}
+.services-section__img img {
+    max-height: 150px;
+}
+/* Секция Services конец */
+
+/* секция Rewards начало */
+.rewards-section {
+    background-color: #f5f4f4;
+
+    padding-top: 48px;
+    padding-bottom: 92px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.rewards-section__title {
+    color: #000;
+    text-align: center;
+    font-family: "Crimson Pro";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 93.75% */
+
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.rewards-section__title_highlighted {
+    color: #e67136;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.rewards-section__subtitle {
+    color: #000;
+    text-align: center;
+    font-family: "Crimson Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 83.333% */
+
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.rewards-section__text {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 125% */
+
+    margin-top: 0;
+    margin-bottom: 64px;
+}
+/* секция Rewards конец */
+
+/* Секция Brands начало */
+.brands-section {
+    background-color: rgba(217, 217, 217, 0.2);
+}
+
+.brands-section__container {
+    max-width: 1440px; /*  Ограничивающий контейнер*/
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.brands-section__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 100px;
+    padding-top: 77px;
+    padding-bottom: 130px;
+}
+
+.brands-section__img img {
+    width: 250px;
+    height: 183px;
+    border: 1px solid #506961;
+}
+
+.brands-section__img:hover {
+    transform: scale(1.2);
+}
+/* Секция Brands конец */
+
+/* Секция Tools начало */
+.tools-section {
+    max-width: 1440px; /*  Ограничивающий контейнер*/
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tools-section__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 25px;
+    padding-top: 81px;
+    padding-bottom: 105px;
+}
+
+.card-title {
+    color: #000;
+    text-align: center;
+    font-family: "Crimson Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 83.333% */
+}
+
+.card-text {
+    color: #000;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 125% */
+}
+
+.card-text-area {
+    padding: 0 20px;
+}
+
+.tools-section__img {
+    margin: 0 auto;
+    max-width: 216px;
+    max-height: 136px;
+    border-radius: 20px;
+    background: #506961;
+}
+
+.tools-section__img img {
+    max-height: 89px;
+}
+
+/* Секция Tools конец */
+
+/* секция Welcome начало  */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-bottom: 100px;
+}
+
+.welcome-section__title {
+    color: #000;
+    font-family: Crimson Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 48px */
+
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+/* секция Welcome конец */
+
+/*Секция футер начало*/
+footer {
+    background-color: #244439;
+    padding: 74px 24px 53px;
+    /* display: grid;
+	width: 132px;
+	height: 317px;
+	flex-shrink: 0; */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 40px;
+    background: var(--White, #fff);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__p {
+    max-width: 655px;
+    padding: 20px;
+    text-align: center;
+}
+
+.line {
+    border-bottom: 1px solid rgba(73, 72, 72, 0.35);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+}
+.flew img {
+    flex-direction: row;
+}
+
+.logo {
+    object-fit: contain;
+    width: 416px;
+    height: 114px;
+    margin-top: 17px;
+}
+
+.p-text {
+    color: #000;
+    text-align: center;
+    font-family: "Crimson Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.copyright {
+    margin: 0 auto;
+}
+
+.logo__footer {
+    width: 416px;
+    height: 114px;
+    flex-shrink: 0;
+    background: lightgray 50% / contain no-repeat;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.icons a {
+    padding: 0 9px;
+}
+.contact {
+    color: #e67136;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+}
+
+.copyright {
+    width: 296px;
+    height: 15px;
+    flex-shrink: 0;
+    color: #000;
+
+    /* Text/Small/Normal */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
+.mail {
+    margin-top: 16px;
+    color: var(--Black, #000);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin-bottom: 10px;
+}
+.call {
+    color: var(--Black, #000);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+/*Секция футер конец*/
+
+/* адаптация */
+@media screen and (max-width: 768px) {
+    #logo {
+        width: 370px;
+        height: 53px;
+        margin-top: 20px;
+        padding-bottom: 7px;
+    }
+
+    .headline-section__layer {
+        padding-bottom: 13%;
+    }
+
+    .headline-section__title {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 44px;
+    }
+
+    .button_join {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .block__text-area {
+        max-width: 90%;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .block__subtitle {
+        font-size: 1.5em;
+    }
+    .block__description {
+        font-size: 1.1em;
+    }
+    .button__text {
+        font-size: 1em;
+    }
+    .block__img {
+        width: 70vw;
+        height: 30vh;
+        order: -1;
+    }
+    .services-section__items {
+        font-size: 1em;
+    }
+    .brands-section__items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .tools-section__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .brands-section__img img {
+        width: 190px;
+        height: 137px;
+    }
+
+    .services-section__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .services-section__img img {
+        max-height: 110px;
+    }
+
+    .rewards-section {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 60px;
+        padding-top: 30px;
+    }
+
+    .rewards-section__title {
+        max-width: 85%;
+        font-size: 40px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .rewards-section__title_highlighted {
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .rewards-section__subtitle {
+        font-size: 22px;
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+
+    .rewards-section__text {
+        line-height: 16px;
+        margin-left: 9%;
+        margin-right: 9%;
+        margin-bottom: 40px;
+    }
+
+    .rewards-section__button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .welcome-section {
+        padding-bottom: 80px;
+    }
+
+    .welcome-section__title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .copyright__text {
+        margin: 0 auto;
+        font-size: 70%;
+    }
+
+    .logo {
+        width: 40vw;
+        height: 30vh;
+        background: rgb(255, 255, 255) 50% / contain no-repeat;
+    }
+    .icons {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .copyright {
+        width: 296px;
+        height: 15px;
+        flex-shrink: 0;
+        color: #000;
+        padding-top: 17px;
+
+        /* Text/Small/Normal */
+        font-family: Roboto;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 21px */
+    }
+    .mail {
+        font-size: 1em;
+    }
+    .call {
+        font-size: 1em;
+    }
+    .line {
+        border-bottom: 3px solid rgba(73, 72, 72, 0.35);
+    }
+    .icons img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    #logo {
+        width: 170px;
+        height: 43px;
+        margin-top: 26px;
+        padding-bottom: 6px;
+    }
+
+    .button {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .headline-section__layer {
+        padding-bottom: 16px;
+    }
+
+    .headline-section__title {
+        font-size: 24px;
+        line-height: 35px;
+        margin-bottom: 23px;
+    }
+
+    .welcome-section__title {
+        font-size: 22px;
+    }
+
+    .button_join {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    .button__text_join {
+        font-size: 14px;
+    }
+
+    .rewards-section__title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .rewards-section__title_highlighted {
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    .rewards-section__subtitle {
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+
+    .rewards-section__text {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .rewards-section__button {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .block__button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .brands-section__items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .brands-section__img img {
+        width: 100px;
+        height: 72px;
+    }
+    .services-section__img img {
+        max-height: 70px;
+    }
+    .icons img {
+        width: 40px;
+    }
+}
