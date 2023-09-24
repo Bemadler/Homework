@@ -1,0 +1,15 @@
+.button{
+background: #E5D4CD;
+display: flex;
+width: 200px;
+height: 60px;
+padding: 27px 85px 22px 85px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 25px;
+border: 2px solid #E5D4CD;
+}
+
+/*# sourceMappingURL=style.css.map */
